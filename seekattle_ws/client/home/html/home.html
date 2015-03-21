@@ -4,17 +4,17 @@
 </head>
 
 <template name="home">
-
-	<div class="container">
-		<img class="sk-logo" alt="sk_logo" src="/img/seekattle_logo.jpg" style="width: 80%; height: 80%"/>
-    </div>
-
     <section id="intro" class="intro-section">
+        <div class="container">
+            <img class="sk-logo" alt="sk_logo" src="/img/seekattle_logo.jpg" style="width: 80%; height: 80%"/>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Introdução</h1>
-                    <a class="btn btn-default page-scroll" href="{{ pathFor 'home'}}">Start!</a>
+                    <p><a class="btn btn-default page-scroll">Start!</a></p>
+                    <p><a class="scroll-services"> Serviços </a></p>
+                    <p><a class="scroll-contacts"> Contactos </a></p>
                 </div>
             </div>
         </div>
@@ -25,18 +25,27 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Serviços</h1>
+                    <p><a class="scroll-intro"> ir para o topo </a></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
+    <section id="contacts" class="contacts-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Contacto</h1>
+                    <p><a class="scroll-intro"> ir para o topo </a></p>
                 </div>
             </div>
+        </div>
+    </section>
+
+
+    <section id="footer" class="home-footer-section">
+        <div class="container">
+            <p class="text-muted">SeeKattle@2015</p>
         </div>
     </section>
 

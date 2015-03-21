@@ -1,10 +1,6 @@
-Meteor.startup(function() {
-});
-
-
 Template.nav.helpers({
-    activeIfTemplateIs: function (template) {
+    'activeIfTemplateIs': function (template) {
       var currentRoute = Router.current(); 
       return currentRoute && template == currentRoute.lookupTemplate() ? 'active' : '';
     }
-  });
+});
