@@ -1,3 +1,8 @@
 <template name="myaccount">
-	<p>My Account</p>
+	{{ #if currentUser }}
+		<h1>My Account</h1>
+	{{else}}
+		<p>Please login first</p>
+		<a class="btn btn-default page-scroll" href="{{ pathFor 'login' }}">Entrar</a>
+	{{/if}}
 </template>

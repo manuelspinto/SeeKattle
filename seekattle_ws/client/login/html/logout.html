@@ -1,13 +1,16 @@
 <template name="logout">
-	{{ #if currentUser }}
-		<p>Tem a certeza que pretende sair?</p>
-		<p>	
-			<form>
-				<input name="yes" type="submit" value="Sim">
-				<a class="btn btn-default page-scroll" href="{{ pathFor 'home' }}">Não</a>
-			</form>
-		</p>
-	{{ else }}
-		<p> You are now logged out</p>
-	{{/if}}
+	<div class="container">
+		{{ #if currentUser }}
+			<h1> Logout </h1>
+			<p>Tem a certeza que pretende sair?</p>
+			<p>	
+				<form>
+					<input name="yes" type="submit" value="Sim">
+					<a class="btn btn-default page-scroll" href="{{ pathFor 'home' }}">Não</a>
+				</form>
+			</p>
+		{{ else }}
+			<p> You are now logged out</p>
+		{{/if}}
+	</div>
 </template>
