@@ -31,8 +31,30 @@
 		      	</ul>
 
 		      	<ul class="nav navbar-nav navbar-right">
-		        	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Registar</a></li>
-		        	<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
+		      		{{ #if currentUser}}
+			        	<li class="{{activeIfTemplateIs 'Myaccount'}}">
+			        		<a href="{{ pathFor 'myaccount' }}">
+			        			<span class="glyphicon glyphicon-user"></span> 
+			        			Minha conta
+			        		</a>
+			        	</li>
+			        {{ /if }}
+
+		      		{{#if currentUser}}
+			        	<li class="{{activeIfTemplateIs 'Logout'}}">
+			        		<a href="{{ pathFor 'logout' }}">
+			        			<span class="glyphicon glyphicon-log-out"></span> 
+			        			Sair
+			        		</a>
+			        	</li>
+		        	{{ else }}
+			        	<li class="{{activeIfTemplateIs 'Login'}}">
+			        		<a href="{{ pathFor 'login' }}">
+			        			<span class="glyphicon glyphicon-log-in"></span> 
+			        			Entrar
+			        		</a>
+			        	</li>
+		        	{{/if}}
 		      	</ul>
 
 		    </div>
