@@ -4,13 +4,11 @@
 			<h1> Logout </h1>
 			<p>Tem a certeza que pretende sair?</p>
 			<p>	
-				<form>
-					<input name="yes" type="submit" value="Sim">
-					<a class="btn btn-default page-scroll" href="{{ pathFor 'home' }}">Não</a>
-				</form>
+				<a class="btn btn-default page-scroll" id="logout-yes">Sim</a>
+				<a class="btn btn-default page-scroll" id="logout-no"   href="{{ pathFor 'home' }}">Não</a>
 			</p>
 		{{ else }}
-			<p> You are now logged out</p>
+			<h3>Saída com sucesso!</h3>
 		{{/if}}
 	</div>
 </template>

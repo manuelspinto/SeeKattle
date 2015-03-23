@@ -1,11 +1,24 @@
 <template name="login">
 	<div class="container">
-		<h1>Login</h1>
-		<form>
-		    <p><input type="email" id="login-email" placeholder="e-mail"></p>
-		    <p><input type="password" id="login-password" placeholder="password"></p>
-		    <p><input type="submit" value="Entrar"></p>
-		</form>
-		<p><a class="btn btn-default page-scroll" href="{{ pathFor 'register' }}">Registar</a></p>
+		{{ #if currentuser}}
+
+		{{else}}
+			<h1>Login</h1>
+			<form>
+			    <p><input type="email" id="login-email" placeholder="e-mail"></p>
+			    <p><input type="password" id="login-password" placeholder="password"></p>
+			    <p>
+			    	<input type="submit" class="btn btn-default page-scroll" id ="login-button" value="Entrar">
+			    	<p>
+				    	ou
+				    	<a class="btn btn-default page-scroll" href="{{ pathFor 'register' }}">
+					    	<span class="glyphicon glyphicon-user"></span>
+					    	Registar
+				    	</a>
+				    </p>
+			    </p>
+			</form>
+			
+		{{ /if}}
 	</div>
 </template>

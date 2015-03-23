@@ -23,7 +23,7 @@ Template.login.events({
 });
 
 Template.logout.events({
-    'submit form': function(event){
+    'click #logout-yes': function(event){
         event.preventDefault();
         Meteor.logout();
     }
