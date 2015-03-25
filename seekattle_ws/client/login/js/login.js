@@ -38,7 +38,12 @@ Template.login.events({
             
         });
         return false;
+    },
+    'click #register-button': function(event){
+        event.preventDefault();
+        Router.go('register');
     }
+
 });
 
 Template.logout.events({
