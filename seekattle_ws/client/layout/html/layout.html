@@ -3,9 +3,9 @@
         {{> nav }}
     </header>
 
-    <article>
+    <body>
         {{> yield}}
-    </article>
+    </body>
 
 </template>
 
@@ -27,7 +27,7 @@
 
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		      	<ul class="nav navbar-nav">
-		        	<li class="{{activeIfTemplateIs 'About'}}"><a href="{{ pathFor 'about'}}">About</a></li>
+		        	<li class="{{activeIfTemplateIs 'Users'}}"><a href="{{ pathFor 'users'}}">Utilizadores</a></li>
 		      	</ul>
 
 		      	<ul class="nav navbar-nav navbar-right">
@@ -35,7 +35,7 @@
 			        	<li class="{{activeIfTemplateIs 'Myaccount'}}">
 			        		<a href="{{ pathFor 'myaccount' }}">
 			        			<span class="glyphicon glyphicon-user"></span> 
-			        			Minha conta
+			        			{{currentUser.username}}
 			        		</a>
 			        	</li>
 			        {{ /if }}

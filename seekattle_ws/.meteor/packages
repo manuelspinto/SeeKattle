@@ -11,3 +11,4 @@ mizzao:bootstrap-3
 iron:router
 jquery
 accounts-password
+accounts-base

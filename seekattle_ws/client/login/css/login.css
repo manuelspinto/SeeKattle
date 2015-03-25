@@ -1,6 +1,4 @@
-.container {
+#container-login {
   width: auto;
-  max-width: 1000px;
-  padding: 0 5px;
-  text-align: center;
+  max-width: 300px;
 }

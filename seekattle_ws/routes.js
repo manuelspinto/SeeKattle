@@ -11,11 +11,11 @@ Router.map(function(){
 		path: '/'
 	});
 
-	this.route('about');
 	this.route('login');
 	this.route('register');
 	this.route('myaccount');
 	this.route('logout');
+	this.route('users');
 });
 
 
