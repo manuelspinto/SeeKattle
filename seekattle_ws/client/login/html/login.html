@@ -1,10 +1,10 @@
 <template name="login">
 	
 <div id="fullscreen_bg" class="fullscreen_bg">
+	<div class="container" id="login-container">
 		{{ #if currentuser}}
 
 		{{else}}
-			<h1 class="form-signin-heading">Entrar</h1>
 			<form class="form-signin" id="login">
 			    <input type="email" class="form-control" autofocus="" id="login-email" placeholder="e-mail">
 			    <input type="password" id="login-password" class="form-control" placeholder="password">
@@ -22,11 +22,12 @@
 				{{ errMsg}}
 				</div>
 				{{/if}}
-			    	<button id="register-button" class="btn btn-lg btn-danger btn-block" href="{{ pathFor 'register' }}">
+			    	<button id="signup-button" class="btn btn-lg btn-danger btn-block" href="{{ pathFor 'signup' }}">
 				    	<span class="glyphicon glyphicon-user"></span>
 				    	Registar
 			    	</button>
 			</form>
 		{{ /if}}
+		</div>
 </div>
 </template>

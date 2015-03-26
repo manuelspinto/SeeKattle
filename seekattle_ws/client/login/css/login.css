@@ -1,5 +1,33 @@
 
+#signup-container{
+	margin-top: 30px;
+  width: 300px;
 
+  position: relative;
+  text-align: left;
+  background: rgba(232,232,232, 0.5);
+
+  border-radius: 15px;
+  border-color:#d2d2d2;
+  border-width: 5px;
+  box-shadow:0 1px 0 #cfcfcf;
+
+}
+
+#login-container{
+  margin-top: 30px;
+  width: 300px;
+
+  position: relative;
+  text-align: left;
+  background: rgba(232,232,232, 0.5);
+
+  border-radius: 15px;
+  border-color:#d2d2d2;
+  border-width: 5px;
+  box-shadow:0 1px 0 #cfcfcf;
+
+}
   .btn 
   {
    outline:0;
@@ -9,6 +37,7 @@
    border-left:none;
    border-right:none;
    box-shadow:inset 2px -3px rgba(0,0,0,0.15);
+   margin-bottom: 20px;
   }
   .btn:focus
   {
@@ -25,17 +54,18 @@
     background-size: cover;
     background-position: 50% 90%;
     /*background-image: url('http://cleancanvas.herokuapp.com/img/backgrounds/color-splash.jpg');*/
-    background-image: url('/img/vaca_acores.jpg');
+    /*background-image: url('/img/vaca_acores.jpg');*/
+    background-image: url('http://seekattle.herokuapp.com/img/vaca_acores.jpg');
     background-repeat:repeat;
   }
   .form-signin {
     max-width: 280px;
     padding: 15px;
     margin: 0 auto;
-    margin-top:50px;
+    margin-top:20px;
   }
 
-  .form-signin .form-signin-heading, .form-signin {
+  .form-signin .form-signin-heading {
     margin-bottom: 10px;
   }
   .form-signin .form-control {
@@ -63,17 +93,24 @@
   .form-signin input[type="password"] {
     margin-bottom: 10px;
   }
+
+  .form-signup input{
+  	margin-bottom: 20px;
+  }
+
+  .form-signup-heading {
+  	margin-top: 20px;
+    color: #000  ;
+    text-align: center;
+    text-shadow: 0 2px 2px #585858 ;
+    margin-bottom: 50px;
+}
+
+
+
   .form-signin-heading {
   	margin-top: 50px;
     color: #F0F0F0  ;
     text-align: center;
     text-shadow: 0 2px 2px #585858 ;
-}
-
-#login-button{
-	margin-bottom: 20px;
-}
-
-#register-button{
-	margin-bottom: 20px;
 }

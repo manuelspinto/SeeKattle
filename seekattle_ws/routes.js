@@ -12,7 +12,7 @@ Router.map(function(){
 	});
 
 	this.route('login');
-	this.route('register');
+	this.route('signup');
 	this.route('myaccount');
 	this.route('logout');
 	this.route('users');

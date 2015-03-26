@@ -4,13 +4,13 @@ goTopByScroll = function (id){
 
 
 Template.home.events({
-	'click .scroll-intro': function(){
+	'click #scroll-intro': function(){
 		goTopByScroll("intro");		
 	},
-	'click .scroll-contacts': function(){
+	'click #scroll-contacts': function(){
 		goTopByScroll("contacts");
 	},
-	'click .scroll-services': function(){
+	'click #scroll-services': function(){
 		goTopByScroll("services");
 	}
 

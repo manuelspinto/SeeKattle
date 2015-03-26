@@ -1,9 +1,9 @@
-Template.register.events({
+Template.signup.events({
 	'submit form': function(event, template){
 	    event.preventDefault();
-	    var emailVar = template.find('#register-email').value;
-	    var passwordVar = template.find('#register-password').value;
-        var usernameVar = template.find('#register-username').value;
+	    var emailVar = template.find('#signup-email').value;
+	    var passwordVar = template.find('#signup-password').value;
+        var usernameVar = template.find('#signup-username').value;
 
 	    Accounts.createUser({
             username: usernameVar,
@@ -39,9 +39,9 @@ Template.login.events({
         });
         return false;
     },
-    'click #register-button': function(event){
+    'click #signup-button': function(event){
         event.preventDefault();
-        Router.go('register');
+        Router.go('signup');
     }
 
 });
