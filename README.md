@@ -86,7 +86,7 @@ Controlo de versões para tudo que seja relacionado com código (servidor web, m
   
   - Aceder remotamente:
   
-    `mongo ds039281.mongolab.com:39281/seekattledb -u seekattle -p el5avaca 
+    `mongo ds039281.mongolab.com:39281/seekattledb -u seekattle -p el5avaca` 
   
   
   
